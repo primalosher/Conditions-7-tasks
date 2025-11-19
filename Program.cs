@@ -232,15 +232,48 @@ namespace ConsoleApp10
             {
                 if (temp > 100)
                     Console.WriteLine("boiling");
-                else 
+                else
                     Console.WriteLine("drippy");
             }
-            else 
+            else
                 Console.WriteLine("ice");
+        }
+        static void Task11()
+        {
+            Console.WriteLine("Enter the blah: ");
+            char x = char.Parse(Console.ReadLine());
+            if (x == 97 || x == 101 || x == 105 || x == 111 || x == 117 || x == 65 || x == 69 || x == 73 || x == 79 || x == 85)
+            {
+                if (x > 64 && x < 91)
+                    Console.WriteLine("capital letter");
+                else
+                    Console.WriteLine("small letter");
+            }
+            else
+                Console.WriteLine("regular letter");
+        }
+        static void Task12()
+        {
+            Console.WriteLine("Enter the hour: ");
+            int hour = int.Parse(Console.ReadLine());
+            if (hour < 12)
+            {
+                if (hour < 6)
+                    Console.WriteLine("night");
+                else
+                    Console.WriteLine("morning");
+            }
+            else
+            {
+                if (hour < 18)
+                    Console.WriteLine("day");
+                else
+                    Console.WriteLine("mid night");
+            }
         }
         static void Main(string[] args)
         {
-            
+
         }
     }
 }
