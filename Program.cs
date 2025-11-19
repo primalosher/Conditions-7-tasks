@@ -113,7 +113,7 @@ namespace ConsoleApp10
             roomType = Console.ReadLine();
             if (roomType == "normal")
                 price = 400;
-            else 
+            else
                 price = 700;
             Console.WriteLine("Is the order in the weekend");
             weekEnd = bool.Parse(Console.ReadLine());
@@ -190,8 +190,8 @@ namespace ConsoleApp10
                     price = price - price * 0.1;
             }
             Console.WriteLine("The price is: " + price);
-                
-                
+
+
         }
         static void Task8()
         {
@@ -204,7 +204,7 @@ namespace ConsoleApp10
                 else
                     Console.WriteLine("Even but cant be divided by 4");
             }
-            else 
+            else
                 Console.WriteLine("The number is odd");
         }
         static void Task9()
@@ -221,12 +221,26 @@ namespace ConsoleApp10
                 else
                     Console.WriteLine("Wrong password");
             }
-            else 
+            else
                 Console.WriteLine("User doesnt exist");
+        }
+        static void Task10()
+        {
+            Console.WriteLine("Enter temp:");
+            int temp = int.Parse(Console.ReadLine());
+            if (temp > 0)
+            {
+                if (temp > 100)
+                    Console.WriteLine("boiling");
+                else 
+                    Console.WriteLine("drippy");
+            }
+            else 
+                Console.WriteLine("ice");
         }
         static void Main(string[] args)
         {
-         
+            
         }
     }
 }
